@@ -21,7 +21,7 @@ Just go to `functions/fun.core.php` and give it access to the MySQL database whe
 
 Then set up a CRON job to `curl` the `fever-filter.php`. The one below is set to run every five minutes.
 
-`00,05,30,45 * * * * curl -L -s http://example.com/fever/filter/fever-filter.php`
+`*/5 * * * * curl -L -s http://example.com/fever/filter/fever-filter.php`
 
 ## Wishlist
 
